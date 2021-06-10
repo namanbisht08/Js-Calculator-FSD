@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="javascript" href="index.js" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
     <title>Calculator</title>
@@ -14,41 +13,37 @@
 
 <body>
     <div class="calculator">
-        <div>
-            <input type="text" class="input" id="input">
-        </div>
-        <div class="buttons">
-            <div class="operators">
-                <div>+</div>
-                <div>-</div>
-                <div>&times;</div>
-                <div>&divide;</div>
-            </div>
-            <div class="leftPanel">
-                <div class="numbers">
-                    <div>7</div>
-                    <div>8</div>
-                    <div>9</div>
-                </div>
-                <div class="numbers">
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                </div>
-                <div class="numbers">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-                <div class="numbers">
-                    <div>0</div>
-                    <div>.</div>
-                    <div id="clear">C</div>
-                </div>
-            </div>
-            <div class="equal" id="result">=</div>
-        </div>
+            <input type="text" class="screen" id="screen">
+        <table>
+            <tr>
+                <td><button id="add">+</button></td>
+                <td><button id="min">-</button></td>
+                <td><button id="mul">x</button></td>
+                <td><button id="div">/</button></td>
+            </tr>
+            <tr>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+                <td rowspan="4"><button id="equalTo">=</button></td>
+            </tr>
+            <tr>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+            </tr>
+            <tr>
+                <td><button>1</button></td>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+            </tr>
+            <tr>
+                <td><button>0</button></td>
+                <td><button>.</button></td>
+                <td><button>C</button></td>
+            </tr>
+        </table>
     </div>
 </body>
-
+<script src="index.js"></script>
 </html>
